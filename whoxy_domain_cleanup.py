@@ -1,8 +1,11 @@
 import json
 import datetime
+import sys
+
+data = sys.argv[1]
 
 # read in JSON file
-with open('test_data.json', 'r') as f:
+with open(data, 'r') as f:
     data = json.load(f)
 
 # get current date
